@@ -1,0 +1,31 @@
+package com.uce.edu.ec.service;
+
+import com.uce.edu.ec.repository.modelo.Persona;
+
+public class PersonaServiceImpl implements IPersonaService {
+
+	@Override
+	public void guardar(Persona persona) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actualizar(Persona persona) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Persona consultarPorCedula(String cedula) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void borrarPorCedula(String cedula) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

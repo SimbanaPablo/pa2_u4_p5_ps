@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<h1> Hola mundo desde JAVA</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>cedula</th>
+				<th>nombre</th>
+				<th>apellido</th>
+				<th>genero</th>
+			</tr>
+		</thead>
+	</table>
+	<tbody>
+		
+	</tbody>
+</body>
+
+</html>

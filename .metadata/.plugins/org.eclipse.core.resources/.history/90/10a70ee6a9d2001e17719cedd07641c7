@@ -1,0 +1,5 @@
+package com.uce.edu.ec.service;
+
+public interface IPersonaService {
+
+}

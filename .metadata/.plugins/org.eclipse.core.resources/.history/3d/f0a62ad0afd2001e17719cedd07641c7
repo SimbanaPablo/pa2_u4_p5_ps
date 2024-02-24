@@ -1,0 +1,13 @@
+package com.uce.edu.ec.repository;
+
+import com.uce.edu.ec.repository.modelo.Persona;
+
+public interface IPersonaRepository {
+	public void insertar(Persona persona);
+
+	public void actualizar(Persona persona);
+
+	public Persona consultarPorCedula(String cedula);
+
+	public void eliminarPorCedula(String cedula);
+}

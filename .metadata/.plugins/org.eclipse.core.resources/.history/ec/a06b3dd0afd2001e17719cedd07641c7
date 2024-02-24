@@ -1,0 +1,24 @@
+package com.uce.edu.ec.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.uce.edu.ec.service.IPersonaService;
+
+//https://localhost:8080/personas/buscar
+@Controller
+@RequestMapping("/personas")
+public class PersonaController {
+
+	@Autowired
+	private IPersonaService personaService;
+
+	@GetMapping("/buscar")
+	private String buscarPorCedula(String cedula) {
+
+		return null;
+	}
+
+}

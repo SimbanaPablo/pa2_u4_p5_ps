@@ -1,0 +1,31 @@
+package com.uce.edu.ec.repository;
+
+import com.uce.edu.ec.repository.modelo.Persona;
+
+public class PersonaRepositoryImpl implements IPersonaRepository {
+
+	@Override
+	public void insertar(Persona persona) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actualizar(Persona persona) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Persona consultarPorCedula(String cedula) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void eliminarPorCedula(String cedula) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
