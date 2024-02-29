@@ -1,0 +1,13 @@
+package com.uce.edu.ec.service.to;
+
+public class PersonaTO {
+	private Integer id;
+
+	private String cedula;
+
+	private String nombre;
+
+	private String apellido;
+
+	private String genero;
+}

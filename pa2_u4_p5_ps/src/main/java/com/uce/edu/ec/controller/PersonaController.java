@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.uce.edu.ec.repository.modelo.Persona;
 import com.uce.edu.ec.service.IPersonaService;
+import com.uce.edu.ec.service.to.PersonaTo;
 
 //http://localhost:8080/personas/buscarTodos
 @Controller
@@ -42,7 +43,7 @@ public class PersonaController {
 
 	// cuando viaja el modelo en el request
 	@PutMapping("/actualizar/{cedula}")
-	public String actualizar(@PathVariable("cedula") String cedula, Persona persona) {
+	public String actualizar(@PathVariable("cedula") String cedula, PersonaTo persona) {
 		Persona aux = this.personaService.consultarPorCedula(cedula);
 		aux.setApellido(persona.getApellido());
 		aux.setCedula(persona.getCedula());
@@ -60,8 +61,12 @@ public class PersonaController {
 	}
 
 	@PostMapping("/guardar")
-	public String guardar(Persona persona) {
-		this.personaService.guardar(persona);
+	public String guardar(PersonaTo persona) {
+		Persona p = new Persona();
+		p.setApellido(persona.getApellido());
+		p.setCedula(persona.getCedula());
+		p.setGenero(persona.getGenero());
+		this.personaService.guardar(p);
 		return "redirect:/personas/buscarTodos";
 	}
 

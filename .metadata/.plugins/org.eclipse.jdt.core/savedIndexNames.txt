@@ -92,7 +92,6 @@ INDEX VERSION 1.134+D:\WORKSPACE - SPRING\Unidad4\.metadata\.plugins\org.eclipse
 2778270783.index
 1460753002.index
 3829061061.index
-302620816.index
 3574468016.index
 1642316662.index
 1161221282.index
