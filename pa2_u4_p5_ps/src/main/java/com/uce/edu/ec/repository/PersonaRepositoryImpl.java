@@ -9,8 +9,10 @@ import com.uce.edu.ec.repository.modelo.Persona;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.TypedQuery;
+import jakarta.transaction.Transactional;
 
 @Repository
+@Transactional
 public class PersonaRepositoryImpl implements IPersonaRepository {
 
 	@PersistenceContext
